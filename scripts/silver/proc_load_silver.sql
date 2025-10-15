@@ -1,12 +1,15 @@
 /*
 ==============================================================
-Stored Procedure: silver.load_silver (Bronze -> Silver)
+Stored Procedure: Load silver.load_silver (Bronze -> Silver)
 ==============================================================
 Script Purpose:
     This script defines a stored procedure to load data from the 'bronze' schema to the 'silver' schema.
     It includes data transformations, standardizations, and validations to ensure data quality.
     The procedure truncates existing data in silver tables before loading new data.
     After defining the procedure, it is executed to perform the data load.
+==============================================================
+Usage Example:
+    CALL silver.load_silver();
 ==============================================================
 */
 
